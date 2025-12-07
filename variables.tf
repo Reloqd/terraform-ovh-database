@@ -61,7 +61,7 @@ variable "database_backup_time" {
 variable "database_maintenance_time" {
   description = "HH:MM start time for maintenance windows"
   type        = string
-  default     = "02:00"
+  default     = null
 }
 
 variable "database_advanced_configuration" {
