@@ -97,8 +97,8 @@ variable "database_nodes" {
   description = "List of node definitions"
   type = list(object({
     region     = string
-    network_id = string
-    subnet_id  = string
+    network_id = optional(string)
+    subnet_id  = optional(string)
   }))
 }
 
