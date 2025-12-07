@@ -3,7 +3,7 @@
 # Actual OVH Database Service
 ############################################
 
-resource "ovh_cloud_project_database_service" "this" {
+resource "ovh_cloud_project_database" "this" {
 
   service_name = var.database_service_name
   description  = var.database_description
